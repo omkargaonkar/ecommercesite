@@ -23,3 +23,15 @@ $local_settings = __DIR__ . "/settings.local.php";
 if (file_exists($local_settings)) {
   include $local_settings;
 }
+$databases['default']['default'] = array (
+  'database' => 'ecoomercesite',
+  'username' => 'root',
+  'password' => 'password',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['hash_salt'] = 'MKO2rZzcSZHm36ZSMAsl-r3kv-2h9DbC4OWC3Q3tbwIYEvnsvU5BzetSxNDuDkeMXpmoi9e_fw';
+$settings['install_profile'] = 'standard';
